@@ -75,9 +75,9 @@ using namespace std;
 /****************************************   // added by Uli
   C Objects
  ****************************************/
-
-extern "C" int remove(const char *filename);
-extern "C" long sysconf(int name);
+// Because this function-declaration is wrong! (less __THROW???)
+//extern "C" int remove(const char *filename);
+//extern "C" long sysconf(int name);
 
 
 /****************************************
